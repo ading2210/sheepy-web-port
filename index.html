@@ -1,30 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>SheepyAShortAdventure</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="icons/icon-128.png">
 
-    <meta name="generator" content="Scirra Construct" />
-    <link rel="icon" type="image/png" href="icons/icon-256.png" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Sheepy: A Short Adventure - Unofficial Web Port</title>
+    <style>
+      @font-face {
+        font-family: "04b03";
+        src: url("fonts/04b_03__.ttf");
+      }
+
+      * {
+        font-family: "04b03", monospace;
+        color: white;
+      }
+
+      html {
+        background-color: black;
+      }
+      body {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1, h2 {
+        text-align: center;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+
+      #launch_button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: block;
+        width: 200px;
+        font-size: 20px;
+        padding: 15px;
+        text-align: center;
+        border: 2px solid white;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <noscript>
-      <div id="notSupportedWrap">
-        <h2 id="notSupportedTitle">This content requires JavaScript</h2>
-        <p class="notSupportedMessage">
-          JavaScript appears to be disabled. Please enable it to view this
-          content.
-        </p>
-      </div>
-    </noscript>
-    <script src="scripts/supportcheck.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/toji/gl-matrix@latest/dist/gl-matrix-min.js"></script>
-    <script src="polyfill.js"></script>
-    <script src="dist/main.js"></script>
+    <h1>Sheepy: A Short Adventure - Unofficial Web Port</h1>
+
+    <a href="https://mrsuicidesheep.itch.io/sheepy">
+      <img src="https://img.itch.zone/aW1nLzE0ODcxMzAwLmpwZw==/original/TNb8k6.jpg">
+    </a>
+    <a id="launch_button" href="javascript:window.open('/play.html', null, 'height=720,width=1280'); undefined;">
+      Launch Game
+    </a>
+    
+    <h2>Disclaimer:</h2>
+    <p>This is an fan made port and it is unaffiliated with <a href="https://linktr.ee/MrSuicideSheep">MrSuicideSheep</a>. Any bug reports should be directed <a href="https://github.com/ading2210/sheepy-web-port/issues">here</a> instead of towards the original developers.</p>
+    <p>Please support the original developers by visiting the <a href="https://mrsuicidesheep.itch.io/sheepy">Itch.io page</a> and the <a href="https://store.steampowered.com/app/1568400/Sheepy_A_Short_Adventure/">Steam listing</a> for the original game.</p>
   </body>
 </html>

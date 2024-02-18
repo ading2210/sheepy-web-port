@@ -1,4 +1,4 @@
-# Sheepy: A Short Adventure - Web Port
+# Sheepy: A Short Adventure - Unofficial Web Port
 
 This is a port of the game [Sheepy: A Short Adventure](https://store.steampowered.com/app/1568400/Sheepy_A_Short_Adventure/) to the web. Since the original game uses the [Construct](https://www.construct.net/en) game engine with no native code, only minimal changes are needed to get it to run on web browsers.
 
