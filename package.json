@@ -1,0 +1,52 @@
+{
+  "main": "index.html",
+  "name": "sheepy-web-port",
+  "description": "",
+  "version": "1.0.0",
+  "window": {
+    "icon": "icons/icon-256.png",
+    "title": "SheepyAShortAdventure",
+    "width": 640,
+    "height": 360,
+    "position": "center",
+    "resizable": true,
+    "frame": true,
+    "kiosk": false,
+    "show": true
+  },
+  "user-agent": "Mozilla/5.0 (%osinfo) AppleWebKit/%webkit_ver (KHTML, like Gecko, Chrome, Safari) NWjs/%nwver",
+  "chromium-args": "--enable-node-worker --disable-plugins --disable-internal-flash --disable-popup-blocking --allow-file-access-from-files --disable-features=HardwareMediaKeyHandling --ignore-gpu-blacklist --in-process-gpu --disable-windows10-custom-titlebar --auto-open-devtools-for-tabs",
+  "c3-steam-mode": true,
+  "c3-app-icons": [
+    {
+      "src": "icons\\icon-16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "src": "icons\\icon-32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "src": "icons\\icon-114.png",
+      "width": 114,
+      "height": 114
+    },
+    {
+      "src": "icons\\icon-128.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "src": "icons\\icon-256.png",
+      "width": 256,
+      "height": 256
+    }
+  ],
+  "dependencies": {
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
