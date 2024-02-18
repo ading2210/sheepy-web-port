@@ -60,4 +60,10 @@ window.nw = {
       };
     },
   },
+
+  Shell: {
+    openExternal(url) {
+      window.open(url);
+    }
+  }
 };

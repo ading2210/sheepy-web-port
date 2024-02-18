@@ -31,4 +31,4 @@ wget -c $download_url -O $zip_file
 bundle_name="SHEEPY A Short Adventure/package.nw"
 bundle_file="download/bundle.zip"
 unzip -p "$zip_file" "$bundle_name" > $bundle_file
-unzip $bundle_file -d game
+unzip -o $bundle_file -d game
