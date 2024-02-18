@@ -4,3 +4,6 @@ This is a port of the game [Sheepy: A Short Adventure](https://store.steampowere
 
 ## Building:
 To build this port for yourself, run `./build.sh`. You must be on Linux with `pcregrep`, `curl`, `jq`, and NodeJS installed.
+
+## License:
+The copyright for the original game belongs to MrSuicideSheep, but the patches for this port are under the MIT license.
