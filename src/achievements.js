@@ -265,8 +265,9 @@ const achievements = {
   },
 };
 
+const cached_imgs = {};
+const channel = new BroadcastChannel("achievements");
 var achievement_status = {};
-var channel = new BroadcastChannel("achievements");
 
 function load_achievements() {
   if (!localStorage.getItem("achievements")) {
@@ -293,7 +294,7 @@ function activate_achievement(name) {
   let notification = document.createElement("div");
   notification.className = "notification";
 
-  let img = document.createElement("img");
+  let img = cached_imgs[name];
   img.className = "notification_img";
   let text_div = document.createElement("div");
   text_div.className = "achievement_text";
@@ -302,7 +303,6 @@ function activate_achievement(name) {
   let description_element = document.createElement("p");
   description_element.className = "achievement_description";
 
-  img.src = achievement.icon;
   title_element.innerText = "Achievement Unlocked!";
   description_element.innerText = achievement.displayName;
 
@@ -399,8 +399,16 @@ function populate_achievements() {
   populate_grid(locked, document.getElementById("locked_grid"));
 }
 
+function preload_images() {
+  for (let [name, achievement] of Object.entries(achievements)) {
+    let img = new Image();
+    img.src = achievement.icon;
+    cached_imgs[name] = img;
+  }
+}
+
 function index_load() {
-  populate_achievements();
+  populate_achievements();  
   channel.onmessage = () => {
     load_achievements();
     populate_achievements();
