@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "04b03";
+  src: url("fonts/04b_03__.ttf");
+}
+
+* {
+  font-family: "04b03", monospace;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101010; 
+}
+::-webkit-scrollbar-thumb {
+  background: #cccccc; 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#achievements_container {
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid white;
+  padding: 8px;
+}
+#achievements_container > h3 {
+  margin: 0px;
+}
+
+.achievements_grid {
+  display: none;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.achievement_img {
+  width: 64px;
+  height: 64px;
+}
+
+.achievement_div {
+  display: flex;
+}
+
+.achievement_text > p {
+  margin: 0px;
+}
+.achievement_text {
+  padding: 4px;
+  padding-left: 8px;
+}
+.achievement_description {
+  font-size: 15px;
+}
+
+@keyframes notification_animation {
+  0% {right: -300px;}
+  10% {right: 0px;}
+  90% {right: 0px;}
+  100% {right: -300px;}
+}
+
+.notification {
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: -300px;
+  width: 250px;
+  padding: 8px;
+  background-color: #101010;
+  animation-name: notification_animation;
+  animation-duration: 5s;
+}
+
+.notification_img {
+  width: 48px;
+  height: 48px;
+}
