@@ -7,7 +7,7 @@ mkdir -p game
 
 main_html="$(curl "https://mrsuicidesheep.itch.io/sheepy")"
 csrf="$(echo "$main_html" | pcregrep -o1 '<meta name="csrf_token" value="(.+?)" \/>')"
-api_url="https://mrsuicidesheep.itch.io/sheepy/file/9733814?source=game_download&after_download_lightbox=1&as_props=1"
+api_url="https://mrsuicidesheep.itch.io/sheepy/file/9759425?source=game_download&after_download_lightbox=1&as_props=1"
 
 game_json="$(curl "$api_url" \
   --compressed -X POST -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0' \
